@@ -1,4 +1,4 @@
-# Károly Darázsi
+# Károly Henrik Darázsi
 
 Junior iOS Developer focused on SwiftUI, Apple platforms, software quality, and thoughtful product development.
 
