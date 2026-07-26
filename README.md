@@ -92,7 +92,7 @@ I work in broadband critical communications, contributing to provisioning, syste
 
 ## Public portfolio boundary
 
-- GlassBox source code, private implementation details, internal identifiers, product logic, and unreleased assets are not published.
+- GlassBox source code, source excerpts, private implementation details, internal identifiers, product logic, and unreleased assets are neither published nor shared as recruitment material.
 - Public repositories contain independently written case studies, sanitized architecture, and verified outcomes rather than cleaned copies of private repositories.
 - Screenshots and workflow visuals are added incrementally only after the relevant UI is stable and has passed explicit privacy review.
 - Real credentials, network details, personal data, private issue content, raw logs, and deployable private workflow configuration remain private.
