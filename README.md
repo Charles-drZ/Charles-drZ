@@ -1,61 +1,87 @@
+<div align="center">
+
 # Károly Henrik Darázsi
 
-Junior iOS Developer focused on SwiftUI, Apple platforms, software quality, and thoughtful product development.
+### iOS developer building products — and the engineering systems that make them reliable.
 
-I am an early-career iOS developer with a background in critical communications, provisioning, Linux systems, technical troubleshooting, and automation. I am currently building GlassBox, an independent SwiftUI iPhone application using SwiftData, private CloudKit sync, StoreKit 2, HealthKit, and Sign in with Apple.
+SwiftUI · Apple platforms · product engineering · automation · evidence-driven delivery
 
-Alongside iOS development, I build and operate a Raspberry Pi 5-based home platform. That work gives me hands-on experience with Docker, Home Assistant, Bash, GitHub Actions, controlled deployment, rollback design, runtime validation, and privacy-aware technical documentation.
+</div>
 
-## What I am building
+---
 
-GlassBox is an iPhone productivity and self-care app built around a simple idea: planning should help people recover from imperfect days rather than make them feel guilty about them.
+I build **GlassBox**, an independent iPhone productivity and self-care product, and the engineering system around it: scoped delivery, validation evidence, durable project memory, review-gated automation, and production-tested infrastructure.
 
-I am building it independently while learning the full product cycle: product shaping, SwiftUI implementation, persistence and sync, TestFlight validation, release preparation, and ongoing iteration.
+My background in broadband critical communications, provisioning, Linux systems, device troubleshooting, and automation shapes how I approach software: investigate carefully, keep responsibilities explicit, validate real behavior, and document decisions so the work remains maintainable.
 
-My current work in critical communications has trained me to investigate problems carefully, work from logs and evidence, and document systems clearly. I apply the same habits to iOS development, automation, and home infrastructure.
+> **GlassBox is the product. The surrounding workflow, automation, project memory, and homelab show how I turn ideas into controlled, testable, and reviewable technical work.**
 
-## Current focus
+## Proof of work
 
-- GlassBox App Store readiness and TestFlight validation
-- Swift and SwiftUI development for Apple platforms
-- Manual testing, regression testing, and issue reproduction
-- SwiftData persistence and CloudKit reliability
-- Release-readiness checks and careful validation
-- OpenAI API and n8n workflow automation
-- Raspberry Pi, Docker, Home Assistant, and safe operations workflows
-- Continued growth toward an iOS development role
+| Project | What it demonstrates | Current state |
+| --- | --- | --- |
+| [**GlassBox**](https://github.com/Charles-drZ/glassbox-showcase) | Independent iPhone product ownership across product shaping, SwiftUI development, persistence, Apple-platform integrations, testing, and release preparation. The application source remains private. | TestFlight validation and App Store readiness |
+| [**Raspberry Home**](https://github.com/Charles-drZ/raspberry-home-showcase) | Versioned Home Assistant UI, Docker operations, guarded deployment, backup, configuration validation, rollback, CI, and desktop/iOS runtime acceptance. | Production-validated v1 on a real Raspberry Pi 5 |
+| [**Development workflow**](https://github.com/Charles-drZ/glassbox-development-workflow) | Evidence-driven product delivery using explicit scope, Git history, runtime validation, durable memory, AI assistance, and human decision authority. | Active working model |
+| [**Automation workflow**](https://github.com/Charles-drZ/automation-workflow-showcase) | n8n-based evidence collection and review-gated project-memory synchronization without treating automated summaries as final truth. | Evolving private workflow with a sanitized public case study |
 
-## Selected work
+## Current technical focus
 
-- [GlassBox public case study](https://github.com/Charles-drZ/glassbox-showcase) — an independent iPhone productivity and self-care app, documented without publishing its private source.
-- [GlassBox development workflow](https://github.com/Charles-drZ/glassbox-development-workflow) — an approach to scope, validation, durable project memory, and AI assistance.
-- [Automation workflow case study](https://github.com/Charles-drZ/automation-workflow-showcase) — a sanitized view of an n8n workflow connecting project systems and reviewed summaries.
-- [Raspberry Home case study](https://github.com/Charles-drZ/raspberry-home-showcase) — a production-validated Raspberry Pi 5 and Home Assistant project covering a responsive native dashboard, cross-client iOS testing, Docker operations, guarded deployment, backup, config validation, rollback, GitHub Actions, and privacy-aware publication.
+- Preparing GlassBox for release through TestFlight, regression testing, persistence and restore validation, and App Store readiness work.
+- Building SwiftUI features with careful state, persistence, localization, and Apple-platform integration boundaries.
+- Developing deterministic, review-gated n8n workflows that connect issue tracking, Git evidence, and durable project memory.
+- Extending a Raspberry Pi 5 and Home Assistant platform through versioned UI work, safe operations, runtime evidence, and privacy-aware documentation.
+- Growing toward an iOS engineering role where product thinking, reliability, and disciplined delivery matter alongside implementation.
 
-## Technologies
+## Technical scope
 
-### Apple development
+### Apple product development
 
-Swift · SwiftUI · SwiftData · CloudKit · StoreKit 2 · HealthKit · Sign in with Apple · Xcode · TestFlight
+Swift · SwiftUI · SwiftData · CloudKit · StoreKit 2 · HealthKit · Sign in with Apple · XCTest · Xcode · TestFlight · localization
 
-### Testing and troubleshooting
+### Quality and validation
 
-Manual testing · Regression testing · Issue reproduction · Runtime validation · Linux · Android Studio Logcat · Wireshark · PCAP analysis
+Unit testing · physical-device testing · manual and regression testing · issue reproduction · persistence and restore checks · runtime validation · log-based troubleshooting · release-readiness review
 
-### Workflow and automation
+### Engineering workflow and automation
 
-Git · GitHub · GitHub Actions · Linear · ChatGPT · Codex · OpenAI API · n8n · Obsidian · Bash · YAML
+Git · GitHub · GitHub Actions · Linear · n8n · OpenAI API · ChatGPT · Codex · Obsidian / Markdown · Python · Bash · YAML · JSON
 
-### Systems and infrastructure
+### Systems and technical operations
 
-Raspberry Pi 5 · Docker · Home Assistant · Pi-hole · Tailscale · Linux · Python · SOTI MobiControl · Provisioning systems · Ericsson EDA · CAI3G · SOAP UI
+Linux · Docker · Raspberry Pi 5 · Home Assistant · Pi-hole · Tailscale · networking · Wireshark / PCAP analysis · MDM · provisioning systems · SOAP / XML services · SQL
+
+## How I work
+
+```mermaid
+flowchart LR
+    A[Product problem] --> B[Accepted scope]
+    B --> C[Implementation]
+    C --> D[Git evidence]
+    D --> E[Tests and runtime validation]
+    E --> F{Acceptance met?}
+    F -- No --> B
+    F -- Yes --> G[Human approval]
+    G --> H[Durable project memory]
+```
+
+AI tools can support investigation, implementation, and structured processing, but they do not replace product decisions, privacy review, runtime acceptance, or final responsibility.
 
 ## Professional background
 
-My current work is in broadband critical communications, where I contribute to provisioning, system integration, device-side technical work, MDM, troubleshooting, internal technical documentation, and automation. It has strengthened my habits around careful investigation, repeatable procedures, rollback thinking, and clear handover documentation.
+I work in broadband critical communications, contributing to provisioning, system integration, device-side technical work, MDM, Linux-based troubleshooting, internal technical documentation, and automation. This environment has strengthened my habits around evidence, rollback thinking, repeatable procedures, and clear technical handover.
+
+## Public portfolio boundary
+
+- GlassBox source code, private implementation details, internal identifiers, product logic, and unreleased assets are not published.
+- Public repositories contain independently written case studies, sanitized architecture, and verified outcomes rather than cleaned copies of private repositories.
+- Screenshots and workflow visuals are added incrementally only after the relevant UI is stable and has passed explicit privacy review.
+- Real credentials, network details, personal data, private issue content, raw logs, and deployable private workflow configuration remain private.
 
 ## Contact
 
 - [LinkedIn](https://linkedin.com/in/charles-drzs)
 - [GitHub](https://github.com/Charles-drZ)
-- App Store: Coming after public release
+- App Store link will be added after public release.
+
+<sub>Technical profile last reviewed: July 2026.</sub>
