@@ -6,6 +6,8 @@
 
 SwiftUI · Apple platforms · product engineering · automation · evidence-driven delivery
 
+**Open to iOS opportunities where product thinking, reliability, and disciplined delivery matter.**
+
 </div>
 
 ---
@@ -18,12 +20,29 @@ My background in broadband critical communications, provisioning, Linux systems,
 
 ## Proof of work
 
-| Project | What it demonstrates | Current state |
-| --- | --- | --- |
-| [**GlassBox**](https://github.com/Charles-drZ/glassbox-showcase) | Independent iPhone product ownership across product shaping, SwiftUI development, persistence, Apple-platform integrations, testing, and release preparation. The application source remains private. | TestFlight validation and App Store readiness |
-| [**Raspberry Home**](https://github.com/Charles-drZ/raspberry-home-showcase) | Versioned Home Assistant UI, Docker operations, guarded deployment, backup, configuration validation, rollback, CI, and desktop/iOS runtime acceptance. | Production-validated v1 on a real Raspberry Pi 5 |
-| [**Development workflow**](https://github.com/Charles-drZ/glassbox-development-workflow) | Evidence-driven product delivery using explicit scope, Git history, runtime validation, durable memory, AI assistance, and human decision authority. | Active working model |
-| [**Automation workflow**](https://github.com/Charles-drZ/automation-workflow-showcase) | n8n-based evidence collection and review-gated project-memory synchronization without treating automated summaries as final truth. | Evolving private workflow with a sanitized public case study |
+### [GlassBox](https://github.com/Charles-drZ/glassbox-showcase)
+
+Independent iPhone product ownership across product shaping, SwiftUI development, persistence, Apple-platform integrations, testing, and release preparation. The application source remains private.
+
+**Current state:** TestFlight validation and App Store readiness.
+
+### [Raspberry Home](https://github.com/Charles-drZ/raspberry-home-showcase)
+
+A versioned Home Assistant UI and safe-operations project covering Docker, guarded deployment, backup, configuration validation, rollback, CI, and desktop/iOS runtime acceptance.
+
+**Current state:** Production-validated v1 on a real Raspberry Pi 5, with additional themes and visual refinements continuing privately.
+
+### [Development workflow](https://github.com/Charles-drZ/glassbox-development-workflow)
+
+An evidence-driven product-delivery model using explicit scope, Git history, runtime validation, durable project memory, AI assistance, and human decision authority.
+
+**Current state:** Active working model used around ongoing product development.
+
+### [Automation workflow](https://github.com/Charles-drZ/automation-workflow-showcase)
+
+An n8n-based system for deterministic evidence collection and review-gated project-memory synchronization without treating automated summaries as final truth.
+
+**Current state:** Verified evidence baseline with the private durable-sync workflow under active development.
 
 ## Current technical focus
 
