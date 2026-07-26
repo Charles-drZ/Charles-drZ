@@ -73,7 +73,7 @@ Linux · Docker · Raspberry Pi 5 · Home Assistant · Pi-hole · Tailscale · n
 ## How I work
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Product problem] --> B[Accepted scope]
     B --> C[Implementation]
     C --> D[Git evidence]
