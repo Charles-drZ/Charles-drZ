@@ -23,7 +23,7 @@ I build products where the app, the infrastructure, and the proof that it works 
 
 I work across product engineering, automation, infrastructure, and reliability.
 
-My main product is **GlassBox**, an independent Apple-platform self-care and productivity app. Alongside it I build **NodeMedic**, a Go-based diagnostics and reliability product, and **Raspberry Home**, a production homelab platform where I develop guarded operations and rollback-aware infrastructure tooling.
+My main product is **GlassBox**, an independent Apple-platform self-care and productivity app. Around it I operate **Glassoft Infrastructure**, the production layer that handles public ingress, deployment boundaries, recovery, and observability. Alongside that I build **NodeMedic**, a Go-based diagnostics and reliability product, and **Raspberry Home**, a real homelab platform where I develop guarded operations and rollback-aware tooling.
 
 The common thread is not a particular framework. I like systems where product behavior, implementation, operations, and evidence all have to agree.
 
@@ -69,11 +69,26 @@ The project combines responsive Home Assistant product work with backup and roll
 
 [Explore Raspberry Home →](https://github.com/Charles-drZ/raspberry-home-showcase)
 
+---
+
+### [Glassoft Infrastructure](case-studies/glassoft-infrastructure.md) · Production infrastructure
+
+`Linux` `Docker` `Caddy` `TLS` `Tailscale` `Backup / Restore` `Observability`
+
+The production infrastructure behind GlassBox: a deliberately small public edge, loopback-only application boundary, private administration path, explicit deployment contracts, independent recovery design, and monitoring that cannot become a serving dependency.
+
+The system is intentionally boring where boring is safer. It does not introduce orchestration, microservices, or scale claims before the product needs them.
+
+**What it shows:** production topology, network and trust boundaries, deployment discipline, disaster-recovery design, and infrastructure decisions driven by failure modes rather than novelty.
+
+[Explore Glassoft Infrastructure →](case-studies/glassoft-infrastructure.md)
+
 ## Currently building
 
 > **GlassBox** — release hardening and watchOS meditation prototyping  
 > **NodeMedic** — authenticated Agent/Cloud state synchronization foundation  
-> **Raspberry Home** — guarded operations and updater hardening
+> **Raspberry Home** — guarded operations and updater hardening  
+> **Glassoft Infrastructure** — backup/recovery and observability hardening
 
 ## Engineering systems
 
@@ -91,7 +106,7 @@ These systems support the engineering work. They are not substitutes for impleme
 Swift · SwiftUI · SwiftData · CloudKit · StoreKit 2 · HealthKit · Sign in with Apple · watchOS · XCTest · Xcode · TestFlight
 
 **Systems & reliability**  
-Go · Linux · Docker · SQLite · systemd · Raspberry Pi · Home Assistant · networking · HTTP APIs · service lifecycle · backup/restore · rollback · runtime diagnostics
+Go · Linux · Docker · SQLite · systemd · Caddy · TLS · Tailscale · Raspberry Pi · Home Assistant · networking · HTTP APIs · service lifecycle · backup/restore · rollback · runtime diagnostics
 
 **Automation & delivery**  
 Git · GitHub · GitHub Actions · Linear · n8n · Python · Bash · YAML · JSON · OpenAI API · deterministic evidence pipelines · review-gated automation
@@ -108,7 +123,7 @@ I work in broadband critical communications, contributing to provisioning, devic
 
 ## Public portfolio boundary
 
-The core product and operations repositories remain private where publishing implementation would expose proprietary logic, unreleased material, credentials, network details, or operational controls. The public repositories are independently written engineering case studies with sanitized architecture, privacy-reviewed visuals, and verified outcomes.
+Core product and operations source stays private where publishing it would expose proprietary logic or operational controls; the public portfolio focuses on sanitized architecture, engineering decisions, visuals, and verified outcomes.
 
 <div align="center">
 
