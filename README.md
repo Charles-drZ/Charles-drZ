@@ -2,105 +2,135 @@
 
 # Károly Henrik Darázsi
 
-### iOS developer building products — and the engineering systems that make them reliable.
+### Software Engineer
 
-SwiftUI · Apple platforms · product engineering · automation · evidence-driven delivery
+**iOS · Automation · Infrastructure**
 
-**Open to iOS opportunities where product thinking, reliability, and disciplined delivery matter.**
+I build products where the app, the infrastructure, and the proof that it works all matter.
+
+<br>
+
+<img src="https://img.shields.io/badge/Swift-111111?style=flat-square&logo=swift&logoColor=white" alt="Swift">
+<img src="https://img.shields.io/badge/Go-111111?style=flat-square&logo=go&logoColor=white" alt="Go">
+<img src="https://img.shields.io/badge/Docker-111111?style=flat-square&logo=docker&logoColor=white" alt="Docker">
+<img src="https://img.shields.io/badge/Linux-111111?style=flat-square&logo=linux&logoColor=white" alt="Linux">
+<img src="https://img.shields.io/badge/GitHub_Actions-111111?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions">
+<img src="https://img.shields.io/badge/n8n-111111?style=flat-square&logo=n8n&logoColor=white" alt="n8n">
 
 </div>
 
 ---
 
-I build **GlassBox**, an independent iPhone productivity and self-care product, and the engineering system around it: scoped delivery, validation evidence, durable project memory, review-gated automation, and production-tested infrastructure.
+I work across product engineering, automation, infrastructure, and reliability.
 
-My background in broadband critical communications, provisioning, Linux systems, device troubleshooting, and automation shapes how I approach software: investigate carefully, keep responsibilities explicit, validate real behavior, and document decisions so the work remains maintainable.
+My main product is **GlassBox**, an independent Apple-platform self-care and productivity app. Around it I operate **Glassoft Infrastructure**, the production layer that handles public ingress, deployment boundaries, recovery, and observability. Alongside that I build **NodeMedic**, a Go-based diagnostics and reliability product, and **Raspberry Home**, a real homelab platform where I develop guarded operations and rollback-aware tooling.
 
-> **GlassBox is the product. The surrounding workflow, automation, project memory, and homelab show how I turn ideas into controlled, testable, and reviewable technical work.**
+The common thread is not a particular framework. I like systems where product behavior, implementation, operations, and evidence all have to agree.
 
-## Proof of work
+## Selected work
 
-### [GlassBox](https://github.com/Charles-drZ/glassbox-showcase)
+### [GlassBox](https://github.com/Charles-drZ/glassbox-showcase) · Apple product engineering
 
-Independent iPhone product ownership across product shaping, SwiftUI development, persistence, Apple-platform integrations, testing, and release preparation. The application source remains private.
+`Swift` `SwiftUI` `SwiftData` `CloudKit` `StoreKit 2` `HealthKit` `watchOS`
 
-**Current state:** TestFlight validation and App Store readiness.
+An independently developed self-care and productivity product built around the idea that productivity should create clarity rather than guilt.
 
-### [Raspberry Home](https://github.com/Charles-drZ/raspberry-home-showcase)
+I own the product end to end: product shaping, implementation, persistence and restore behavior, Apple-platform integrations, localization, physical-device validation, TestFlight work, and release readiness. A watchOS meditation experience is now moving through real-device prototyping.
 
-A versioned Home Assistant UI and safe-operations project covering Docker, guarded deployment, backup, configuration validation, rollback, CI, and desktop/iOS runtime acceptance.
+**What it shows:** long-lived Apple-platform product ownership rather than isolated sample-app development.
 
-**Current state:** Production-validated v1 on a real Raspberry Pi 5, with additional themes and visual refinements continuing privately.
+[Explore GlassBox →](https://github.com/Charles-drZ/glassbox-showcase)
 
-### [Development workflow](https://github.com/Charles-drZ/glassbox-development-workflow)
+---
 
-An evidence-driven product-delivery model using explicit scope, Git history, runtime validation, durable project memory, AI assistance, and human decision authority.
+### [NodeMedic](https://github.com/Charles-drZ/nodemedic-showcase) · Reliability product
 
-**Current state:** Active working model used around ongoing product development.
+`Go` `SQLite` `HTTP API` `systemd` `Linux` `Release Engineering`
 
-### [Automation workflow](https://github.com/Charles-drZ/automation-workflow-showcase)
+A local-first diagnostics and reliability toolkit for Pi Network Node operators. It turns host, Docker, Pi Node, network, and resource observations into deterministic findings with evidence, confidence, and a useful next step.
 
-An n8n-based system for deterministic evidence collection and review-gated project-memory synchronization without treating automated summaries as final truth.
+The working system includes terminal and JSON reports, sanitized support bundles, SQLite-backed history, a local API and embedded dashboard, scheduled health checks, health-transition tracking, rootless Linux service operation, and deterministic multi-platform release packaging. Cloud/agent foundations use explicit identity, credential, enrollment, and trust boundaries.
 
-**Current state:** Verified evidence baseline with the private durable-sync workflow under active development.
+**What it shows:** product architecture, systems programming, persistence, security boundaries, service lifecycle, and release engineering in one system.
 
-## Current technical focus
+[Explore NodeMedic →](https://github.com/Charles-drZ/nodemedic-showcase)
 
-- Preparing GlassBox for release through TestFlight, regression testing, persistence and restore validation, and App Store readiness work.
-- Building SwiftUI features with careful state, persistence, localization, and Apple-platform integration boundaries.
-- Developing deterministic, review-gated n8n workflows that connect issue tracking, Git evidence, and durable project memory.
-- Extending a Raspberry Pi 5 and Home Assistant platform through versioned UI work, safe operations, runtime evidence, and privacy-aware documentation.
-- Growing toward an iOS engineering role where product thinking, reliability, and disciplined delivery matter alongside implementation.
+---
 
-## Technical scope
+### [Raspberry Home](https://github.com/Charles-drZ/raspberry-home-showcase) · Infrastructure & operations
 
-### Apple product development
+`Raspberry Pi 5` `Docker` `Home Assistant` `Python` `Bash` `GitHub Actions`
 
-Swift · SwiftUI · SwiftData · CloudKit · StoreKit 2 · HealthKit · Sign in with Apple · XCTest · Xcode · TestFlight · localization
+A real home platform treated as an engineering system rather than a collection of containers.
 
-### Quality and validation
+The project combines responsive Home Assistant product work with backup and rollback, repository safety checks, guarded updates, transactional recovery, fail-closed operational behavior, constrained privileged boundaries, and validation against the real running environment.
 
-Unit testing · physical-device testing · manual and regression testing · issue reproduction · persistence and restore checks · runtime validation · log-based troubleshooting · release-readiness review
+**What it shows:** infrastructure and reliability engineering with real operational consequences, not a disposable lab setup.
 
-### Engineering workflow and automation
+[Explore Raspberry Home →](https://github.com/Charles-drZ/raspberry-home-showcase)
 
-Git · GitHub · GitHub Actions · Linear · n8n · OpenAI API · ChatGPT · Codex · Obsidian / Markdown · Python · Bash · YAML · JSON
+---
 
-### Systems and technical operations
+### [Glassoft Infrastructure](case-studies/glassoft-infrastructure.md) · Production infrastructure
 
-Linux · Docker · Raspberry Pi 5 · Home Assistant · Pi-hole · Tailscale · networking · Wireshark / PCAP analysis · MDM · provisioning systems · SOAP / XML services · SQL
+`Linux` `Docker` `Caddy` `TLS` `Tailscale` `Backup / Restore` `Observability`
 
-## How I work
+The production infrastructure behind GlassBox: a deliberately small public edge, loopback-only application boundary, private administration path, explicit deployment contracts, independent recovery design, and monitoring that cannot become a serving dependency.
 
-```mermaid
-flowchart TD
-    A[Product problem] --> B[Accepted scope]
-    B --> C[Implementation]
-    C --> D[Git evidence]
-    D --> E[Tests and runtime validation]
-    E --> F{Acceptance met?}
-    F -- No --> B
-    F -- Yes --> G[Human approval]
-    G --> H[Durable project memory]
-```
+The system is intentionally boring where boring is safer. It does not introduce orchestration, microservices, or scale claims before the product needs them.
 
-AI tools can support investigation, implementation, and structured processing, but they do not replace product decisions, privacy review, runtime acceptance, or final responsibility.
+**What it shows:** production topology, network and trust boundaries, deployment discipline, disaster-recovery design, and infrastructure decisions driven by failure modes rather than novelty.
 
-## Professional background
+[Explore Glassoft Infrastructure →](case-studies/glassoft-infrastructure.md)
 
-I work in broadband critical communications, contributing to provisioning, system integration, device-side technical work, MDM, Linux-based troubleshooting, internal technical documentation, and automation. This environment has strengthened my habits around evidence, rollback thinking, repeatable procedures, and clear technical handover.
+## Currently building
+
+> **GlassBox** — release hardening and watchOS meditation prototyping  
+> **NodeMedic** — authenticated Agent/Cloud state synchronization foundation  
+> **Raspberry Home** — guarded operations and updater hardening  
+> **Glassoft Infrastructure** — backup/recovery and observability hardening
+
+## Engineering systems
+
+The products above are backed by a workflow that keeps scope, implementation evidence, runtime validation, and durable knowledge separate instead of treating chat history or task status as truth.
+
+**[Development workflow](https://github.com/Charles-drZ/glassbox-development-workflow)** — scoped delivery, source-of-truth boundaries, runtime evidence, review, and durable engineering knowledge.
+
+**[Automation workflow](https://github.com/Charles-drZ/automation-workflow-showcase)** — deterministic evidence collection, integrity checks, bounded semantic review, and review-gated project-memory synchronization.
+
+These systems support the engineering work. They are not substitutes for implementation or runtime acceptance.
+
+## Technical range
+
+**Apple platforms**  
+Swift · SwiftUI · SwiftData · CloudKit · StoreKit 2 · HealthKit · Sign in with Apple · watchOS · XCTest · Xcode · TestFlight
+
+**Systems & reliability**  
+Go · Linux · Docker · SQLite · systemd · Caddy · TLS · Tailscale · Raspberry Pi · Home Assistant · networking · HTTP APIs · service lifecycle · backup/restore · rollback · runtime diagnostics
+
+**Automation & delivery**  
+Git · GitHub · GitHub Actions · Linear · n8n · Python · Bash · YAML · JSON · OpenAI API · deterministic evidence pipelines · review-gated automation
+
+## How I engineer
+
+I prefer explicit boundaries over hidden assumptions: scoped changes, deterministic behavior where possible, fail-closed handling when evidence is incomplete, recovery paths before risky mutation, and validation against the real runtime or device when the result is user-facing.
+
+AI tools are part of my development environment. Product decisions, security boundaries, publication decisions, and final runtime acceptance are not delegated to them.
+
+## Background
+
+I work in broadband critical communications, contributing to provisioning, device management, system integration, Linux-based troubleshooting, technical documentation, and automation. It is an environment where evidence, recovery, repeatable procedures, and clear operational boundaries matter.
 
 ## Public portfolio boundary
 
-- GlassBox source code, source excerpts, private implementation details, internal identifiers, product logic, and unreleased assets are neither published nor shared as recruitment material.
-- Public repositories contain independently written case studies, sanitized architecture, and verified outcomes rather than cleaned copies of private repositories.
-- Screenshots and workflow visuals are added incrementally only after the relevant UI is stable and has passed explicit privacy review.
-- Real credentials, network details, personal data, private issue content, raw logs, and deployable private workflow configuration remain private.
+Core product and operations source stays private where publishing it would expose proprietary logic or operational controls; the public portfolio focuses on sanitized architecture, engineering decisions, visuals, and verified outcomes.
 
-## Contact
+<div align="center">
 
-- [LinkedIn](https://linkedin.com/in/charles-drzs)
-- [GitHub](https://github.com/Charles-drZ)
-- App Store link will be added after public release.
+### Contact
 
-<sub>Technical profile last reviewed: July 2026.</sub>
+[LinkedIn](https://linkedin.com/in/charles-drzs) · [GitHub](https://github.com/Charles-drZ)
+
+<sub>Technical profile last reviewed: September 2026.</sub>
+
+</div>
