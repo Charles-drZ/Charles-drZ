@@ -2,105 +2,90 @@
 
 # Károly Henrik Darázsi
 
-### iOS developer building products — and the engineering systems that make them reliable.
+### Software Engineer | iOS, Automation & Infrastructure
 
-SwiftUI · Apple platforms · product engineering · automation · evidence-driven delivery
+I build Apple-platform products and the engineering systems that make them reliable.
 
-**Open to iOS opportunities where product thinking, reliability, and disciplined delivery matter.**
+Swift · SwiftUI · Go · Linux · Docker · Automation · Reliability
 
 </div>
 
 ---
 
-I build **GlassBox**, an independent iPhone productivity and self-care product, and the engineering system around it: scoped delivery, validation evidence, durable project memory, review-gated automation, and production-tested infrastructure.
+I am a software engineer working across product development, automation, infrastructure, and reliability.
 
-My background in broadband critical communications, provisioning, Linux systems, device troubleshooting, and automation shapes how I approach software: investigate carefully, keep responsibilities explicit, validate real behavior, and document decisions so the work remains maintainable.
+My main product is **GlassBox**, an independent iPhone self-care and productivity app. Around it I have built the engineering systems needed to develop and operate a real product: persistence and restore validation, Apple-platform integrations, release workflows, project-memory automation, production infrastructure, and physical-device testing.
 
-> **GlassBox is the product. The surrounding workflow, automation, project memory, and homelab show how I turn ideas into controlled, testable, and reviewable technical work.**
+Alongside GlassBox I build **NodeMedic**, a Go-based diagnostics and reliability product for Pi Network node operators, and **Raspberry Home**, a production homelab platform where I develop guarded operations, rollback-aware deployment tooling, Home Assistant interfaces, and runtime validation.
 
-## Proof of work
+The common thread is simple: I like systems where product behavior, implementation, operations, and evidence all have to agree.
+
+## Selected engineering work
 
 ### [GlassBox](https://github.com/Charles-drZ/glassbox-showcase)
 
-Independent iPhone product ownership across product shaping, SwiftUI development, persistence, Apple-platform integrations, testing, and release preparation. The application source remains private.
+An independently developed iPhone productivity and self-care product built with SwiftUI, SwiftData, CloudKit, StoreKit 2, HealthKit, and Sign in with Apple.
 
-**Current state:** TestFlight validation and App Store readiness.
+I own the product end to end: product shaping, implementation, persistence and restore behavior, Apple-platform integrations, localization, physical-device validation, TestFlight work, and release readiness. A watchOS meditation experience is now being explored through a real-device prototype path.
+
+**Engineering signal:** long-lived Apple-platform product ownership rather than isolated sample-app development.
+
+### [NodeMedic](https://github.com/Charles-drZ/nodemedic-showcase)
+
+A local-first diagnostics and reliability toolkit for Pi Network Nodes, implemented in Go.
+
+The working system includes deterministic diagnostics, structured evidence, terminal and JSON reporting, sanitized support bundles, SQLite-backed scan history, a local API and embedded dashboard, scheduled health checks, health-transition tracking, rootless Linux service operation, and deterministic multi-platform release packaging. Cloud/agent foundations are being developed with explicit identity, credential, enrollment, and trust boundaries.
+
+**Engineering signal:** systems programming, product architecture, persistence, security boundaries, service lifecycle, and release engineering in one product.
 
 ### [Raspberry Home](https://github.com/Charles-drZ/raspberry-home-showcase)
 
-A versioned Home Assistant UI and safe-operations project covering Docker, guarded deployment, backup, configuration validation, rollback, CI, and desktop/iOS runtime acceptance.
+A Raspberry Pi 5 / Docker / Home Assistant platform treated as an engineering system rather than an ad-hoc homelab.
 
-**Current state:** Production-validated v1 on a real Raspberry Pi 5, with additional themes and visual refinements continuing privately.
+The project covers responsive Home Assistant UI work, cross-client validation, backup and rollback, repository safety checks, guarded updates, transactional recovery, fail-closed operational behavior, and tightly constrained privileged boundaries.
 
-### [Development workflow](https://github.com/Charles-drZ/glassbox-development-workflow)
+**Engineering signal:** infrastructure and reliability work validated against a real running environment.
 
-An evidence-driven product-delivery model using explicit scope, Git history, runtime validation, durable project memory, AI assistance, and human decision authority.
+### Engineering systems
 
-**Current state:** Active working model used around ongoing product development.
+My supporting engineering workflow separates product intent, implementation evidence, runtime validation, and durable knowledge instead of treating chat history or task status as truth.
 
-### [Automation workflow](https://github.com/Charles-drZ/automation-workflow-showcase)
+- [Development workflow](https://github.com/Charles-drZ/glassbox-development-workflow) — scoped delivery, evidence, review, and durable project memory.
+- [Automation workflow](https://github.com/Charles-drZ/automation-workflow-showcase) — n8n-based deterministic evidence collection and review-gated project-memory synchronization.
 
-An n8n-based system for deterministic evidence collection and review-gated project-memory synchronization without treating automated summaries as final truth.
-
-**Current state:** Verified evidence baseline with the private durable-sync workflow under active development.
-
-## Current technical focus
-
-- Preparing GlassBox for release through TestFlight, regression testing, persistence and restore validation, and App Store readiness work.
-- Building SwiftUI features with careful state, persistence, localization, and Apple-platform integration boundaries.
-- Developing deterministic, review-gated n8n workflows that connect issue tracking, Git evidence, and durable project memory.
-- Extending a Raspberry Pi 5 and Home Assistant platform through versioned UI work, safe operations, runtime evidence, and privacy-aware documentation.
-- Growing toward an iOS engineering role where product thinking, reliability, and disciplined delivery matter alongside implementation.
+These systems support the products above; they are not substitutes for implementation or runtime acceptance.
 
 ## Technical scope
 
-### Apple product development
+### Apple platforms
 
-Swift · SwiftUI · SwiftData · CloudKit · StoreKit 2 · HealthKit · Sign in with Apple · XCTest · Xcode · TestFlight · localization
+Swift · SwiftUI · SwiftData · CloudKit · StoreKit 2 · HealthKit · Sign in with Apple · watchOS prototyping · XCTest · Xcode · TestFlight · localization
 
-### Quality and validation
+### Systems and reliability
 
-Unit testing · physical-device testing · manual and regression testing · issue reproduction · persistence and restore checks · runtime validation · log-based troubleshooting · release-readiness review
+Go · Linux · Docker · SQLite · systemd · Raspberry Pi 5 · Home Assistant · networking · HTTP APIs · service lifecycle · backup/restore · rollback · runtime diagnostics
 
-### Engineering workflow and automation
+### Automation and delivery
 
-Git · GitHub · GitHub Actions · Linear · n8n · OpenAI API · ChatGPT · Codex · Obsidian / Markdown · Python · Bash · YAML · JSON
+Git · GitHub · GitHub Actions · Linear · n8n · Python · Bash · YAML · JSON · OpenAI API · structured evidence pipelines · review-gated automation
 
-### Systems and technical operations
+## Engineering approach
 
-Linux · Docker · Raspberry Pi 5 · Home Assistant · Pi-hole · Tailscale · networking · Wireshark / PCAP analysis · MDM · provisioning systems · SOAP / XML services · SQL
+I prefer explicit boundaries over hidden assumptions: scoped changes, deterministic behavior where possible, fail-closed handling when evidence is incomplete, rollback before risky mutation, and validation against the real runtime or device when the result is user-facing.
 
-## How I work
-
-```mermaid
-flowchart TD
-    A[Product problem] --> B[Accepted scope]
-    B --> C[Implementation]
-    C --> D[Git evidence]
-    D --> E[Tests and runtime validation]
-    E --> F{Acceptance met?}
-    F -- No --> B
-    F -- Yes --> G[Human approval]
-    G --> H[Durable project memory]
-```
-
-AI tools can support investigation, implementation, and structured processing, but they do not replace product decisions, privacy review, runtime acceptance, or final responsibility.
+AI tools are part of my development environment, but product decisions, security boundaries, publication decisions, and final runtime acceptance remain human responsibilities.
 
 ## Professional background
 
-I work in broadband critical communications, contributing to provisioning, system integration, device-side technical work, MDM, Linux-based troubleshooting, internal technical documentation, and automation. This environment has strengthened my habits around evidence, rollback thinking, repeatable procedures, and clear technical handover.
+I work in broadband critical communications, contributing to provisioning, device management, system integration, Linux-based troubleshooting, technical documentation, and automation. That environment has reinforced habits around evidence, recovery, repeatable procedures, and clear operational boundaries.
 
 ## Public portfolio boundary
 
-- GlassBox source code, source excerpts, private implementation details, internal identifiers, product logic, and unreleased assets are neither published nor shared as recruitment material.
-- Public repositories contain independently written case studies, sanitized architecture, and verified outcomes rather than cleaned copies of private repositories.
-- Screenshots and workflow visuals are added incrementally only after the relevant UI is stable and has passed explicit privacy review.
-- Real credentials, network details, personal data, private issue content, raw logs, and deployable private workflow configuration remain private.
+The core product and operations repositories remain private where publishing implementation would expose proprietary logic, unreleased product material, credentials, network details, or operational controls. Public repositories contain independently written case studies, sanitized architecture, privacy-reviewed visuals, and verified outcomes.
 
 ## Contact
 
 - [LinkedIn](https://linkedin.com/in/charles-drzs)
 - [GitHub](https://github.com/Charles-drZ)
-- App Store link will be added after public release.
 
-<sub>Technical profile last reviewed: July 2026.</sub>
+<sub>Technical profile last reviewed: September 2026.</sub>
