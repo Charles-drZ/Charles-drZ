@@ -6,7 +6,7 @@
 
 **iOS · Automation · Infrastructure**
 
-I build products where the app, the infrastructure, and the proof that it works all matter.
+I build product software and the systems around it: Apple apps, macOS developer tooling, reliability products, infrastructure, automation, and bounded AI-agent execution.
 
 <br>
 
@@ -21,11 +21,9 @@ I build products where the app, the infrastructure, and the proof that it works 
 
 ---
 
-I work across product engineering, automation, infrastructure, and reliability.
+I work across product engineering, systems and reliability, automation, and infrastructure.
 
-My main product is **GlassBox**, an independent Apple-platform self-care and productivity app. Around it I operate **Glassoft Infrastructure**, the production layer that handles public ingress, deployment boundaries, recovery, and observability. Alongside that I build **NodeMedic**, a Go-based diagnostics and reliability product, and **Raspberry Home**, a real homelab platform where I develop guarded operations and rollback-aware tooling.
-
-The common thread is not a particular framework. I like systems where product behavior, implementation, operations, and evidence all have to agree.
+The common thread is architectural rather than framework-specific: I care about how product behavior, persistence, process lifecycle, security boundaries, deployment, recovery, and runtime evidence fit together. I use AI-assisted development heavily, but I keep engineering authority in explicit contracts, tests, runtime validation, and human review.
 
 ## Selected work
 
@@ -33,13 +31,27 @@ The common thread is not a particular framework. I like systems where product be
 
 `Swift` `SwiftUI` `SwiftData` `CloudKit` `StoreKit 2` `HealthKit` `watchOS`
 
-An independently developed self-care and productivity product built around the idea that productivity should create clarity rather than guilt.
+An independently developed self-care and productivity product in active TestFlight hardening.
 
-I own the product end to end: product shaping, implementation, persistence and restore behavior, Apple-platform integrations, localization, physical-device validation, TestFlight work, and release readiness. A watchOS meditation experience is now moving through real-device prototyping.
+I own the product end to end: product shaping, implementation, persistence and restore behavior, Apple-platform integrations, localization, physical-device validation, TestFlight work, release readiness, and the supporting engineering workflow.
 
-**What it shows:** long-lived Apple-platform product ownership rather than isolated sample-app development.
+**What it shows:** long-lived Apple-platform product ownership, not isolated sample-app development.
 
 [Explore GlassBox →](https://github.com/Charles-drZ/glassbox-showcase)
+
+---
+
+### [GlassPort](https://github.com/Charles-drZ/glassport-showcase) · Native macOS developer tooling
+
+`Swift` `AppKit` `SwiftTerm` `PTY` `OpenSSH` `Xcode`
+
+A native macOS workspace for local and remote development environments.
+
+The validated foundation includes a real local zsh terminal over PTY, system OpenSSH sessions, safe host discovery from `~/.ssh/config`, durable workspace persistence, workspace switching and lifecycle management, and native macOS validation.
+
+**What it shows:** developer-tool architecture, process/session lifecycle design, native macOS engineering, persistence boundaries, and integration with trusted system tools.
+
+[Explore GlassPort →](https://github.com/Charles-drZ/glassport-showcase)
 
 ---
 
@@ -47,9 +59,9 @@ I own the product end to end: product shaping, implementation, persistence and r
 
 `Go` `SQLite` `HTTP API` `systemd` `Linux` `Release Engineering`
 
-A local-first diagnostics and reliability toolkit for Pi Network Node operators. It turns host, Docker, Pi Node, network, and resource observations into deterministic findings with evidence, confidence, and a useful next step.
+A local-first diagnostics and reliability toolkit that turns host, container, network, and resource observations into deterministic findings with evidence, confidence, and a useful next step.
 
-The working system includes terminal and JSON reports, sanitized support bundles, SQLite-backed history, a local API and embedded dashboard, scheduled health checks, health-transition tracking, rootless Linux service operation, and deterministic multi-platform release packaging. Cloud/agent foundations use explicit identity, credential, enrollment, and trust boundaries.
+The working system includes terminal and JSON reports, sanitized support bundles, SQLite-backed history, a local API and embedded dashboard, scheduled health checks, health-transition tracking, rootless Linux service operation, and deterministic multi-platform release packaging.
 
 **What it shows:** product architecture, systems programming, persistence, security boundaries, service lifecycle, and release engineering in one system.
 
@@ -57,9 +69,23 @@ The working system includes terminal and JSON reports, sanitized support bundles
 
 ---
 
+### [Glassoft Agent Runtime](https://github.com/Charles-drZ/glassoft-agent-runtime-showcase) · AI-agent infrastructure
+
+`Go` `Linux` `OpenCode` `OpenShell` `NVIDIA Nemotron` `GitHub`
+
+An engineering runtime for bounded, reviewable AI-agent execution across non-iOS Glassoft projects.
+
+The current pilot includes deterministic GitHub-Issue execution packets, worker preflight, durable job-state foundations, an agent supervisor foundation, and an explicit provider-neutral backend contract. Hard sandbox qualification, scheduling, and full autonomous execution remain deliberately gated until their runtime boundaries are proven.
+
+**What it shows:** agent orchestration as a systems problem — scope contracts, execution boundaries, capability declarations, evidence, failure handling, and human gates rather than unconstrained code generation.
+
+[Explore GAR →](https://github.com/Charles-drZ/glassoft-agent-runtime-showcase)
+
+---
+
 ### [Raspberry Home](https://github.com/Charles-drZ/raspberry-home-showcase) · Infrastructure & operations
 
-`Raspberry Pi 5` `Docker` `Home Assistant` `Python` `Bash` `GitHub Actions`
+`Raspberry Pi` `Docker` `Home Assistant` `Python` `Bash` `GitHub Actions`
 
 A real home platform treated as an engineering system rather than a collection of containers.
 
@@ -75,47 +101,44 @@ The project combines responsive Home Assistant product work with backup and roll
 
 `Linux` `Docker` `Caddy` `TLS` `Tailscale` `Backup / Restore` `Observability`
 
-The production infrastructure behind GlassBox: a deliberately small public edge, loopback-only application boundary, private administration path, explicit deployment contracts, independent recovery design, and monitoring that cannot become a serving dependency.
+The production infrastructure behind GlassBox: deliberately small public ingress, private administration, explicit deployment contracts, independent recovery design, and monitoring that cannot become a serving dependency.
 
-The system is intentionally boring where boring is safer. It does not introduce orchestration, microservices, or scale claims before the product needs them.
-
-**What it shows:** production topology, network and trust boundaries, deployment discipline, disaster-recovery design, and infrastructure decisions driven by failure modes rather than novelty.
+**What it shows:** network and trust boundaries, deployment discipline, disaster-recovery design, and infrastructure decisions driven by failure modes rather than novelty.
 
 [Explore Glassoft Infrastructure →](case-studies/glassoft-infrastructure.md)
 
 ## Currently building
 
 > **GlassBox** — release hardening and watchOS meditation prototyping  
-> **NodeMedic** — authenticated Agent/Cloud state synchronization foundation  
-> **Raspberry Home** — guarded operations and updater hardening  
-> **Glassoft Infrastructure** — backup/recovery and observability hardening
+> **GlassPort** — native macOS workspace and developer-tool workflow  
+> **NodeMedic** — authenticated Agent/Cloud synchronization foundations  
+> **Glassoft Agent Runtime** — bounded issue-driven agent execution and orchestration  
+> **Raspberry Home** — guarded operations and deployment hardening
 
 ## Engineering systems
 
-The products above are backed by a workflow that keeps scope, implementation evidence, runtime validation, and durable knowledge separate instead of treating chat history or task status as truth.
+The products above are backed by workflows that keep scope, implementation evidence, runtime validation, and durable knowledge separate instead of treating chat history or task status as truth.
 
 **[Development workflow](https://github.com/Charles-drZ/glassbox-development-workflow)** — scoped delivery, source-of-truth boundaries, runtime evidence, review, and durable engineering knowledge.
 
 **[Automation workflow](https://github.com/Charles-drZ/automation-workflow-showcase)** — deterministic evidence collection, integrity checks, bounded semantic review, and review-gated project-memory synchronization.
 
-These systems support the engineering work. They are not substitutes for implementation or runtime acceptance.
-
 ## Technical range
 
-**Apple platforms**  
-Swift · SwiftUI · SwiftData · CloudKit · StoreKit 2 · HealthKit · Sign in with Apple · watchOS · XCTest · Xcode · TestFlight
+**Apple & macOS**  
+Swift · SwiftUI · AppKit · SwiftData · CloudKit · StoreKit 2 · HealthKit · Sign in with Apple · watchOS · SwiftTerm · PTY/process lifecycle · OpenSSH · XCTest · Xcode · TestFlight
 
 **Systems & reliability**  
 Go · Linux · Docker · SQLite · systemd · Caddy · TLS · Tailscale · Raspberry Pi · Home Assistant · networking · HTTP APIs · service lifecycle · backup/restore · rollback · runtime diagnostics
 
-**Automation & delivery**  
-Git · GitHub · GitHub Actions · Linear · n8n · Python · Bash · YAML · JSON · OpenAI API · deterministic evidence pipelines · review-gated automation
+**Automation & agent infrastructure**  
+Git · GitHub · GitHub Actions · n8n · Python · Bash · YAML · JSON · OpenCode · OpenShell · NVIDIA Nemotron · deterministic evidence pipelines · review-gated automation · execution contracts
 
 ## How I engineer
 
 I prefer explicit boundaries over hidden assumptions: scoped changes, deterministic behavior where possible, fail-closed handling when evidence is incomplete, recovery paths before risky mutation, and validation against the real runtime or device when the result is user-facing.
 
-AI tools are part of my development environment. Product decisions, security boundaries, publication decisions, and final runtime acceptance are not delegated to them.
+AI tools are part of my engineering environment. Product decisions, security boundaries, publication decisions, and final runtime acceptance are not delegated to them.
 
 ## Background
 
@@ -123,7 +146,7 @@ I work in broadband critical communications, contributing to provisioning, devic
 
 ## Public portfolio boundary
 
-Core product and operations source stays private where publishing it would expose proprietary logic or operational controls; the public portfolio focuses on sanitized architecture, engineering decisions, visuals, and verified outcomes.
+Core product and operations source stays private where publishing it would expose proprietary logic or operational controls. The public portfolio focuses on sanitized architecture, engineering decisions, visuals, and verified outcomes.
 
 <div align="center">
 
