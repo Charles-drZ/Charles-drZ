@@ -14,6 +14,7 @@ I build software products and the engineering systems around them: Apple-platfor
 <img src="https://img.shields.io/badge/PostgreSQL-111111?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
 <img src="https://img.shields.io/badge/Docker-111111?style=flat-square&logo=docker&logoColor=white" alt="Docker">
 <img src="https://img.shields.io/badge/Linux-111111?style=flat-square&logo=linux&logoColor=white" alt="Linux">
+<img src="https://img.shields.io/badge/NVIDIA-111111?style=flat-square&logo=nvidia&logoColor=white" alt="NVIDIA">
 
 </div>
 
@@ -43,9 +44,9 @@ GlassBox now also includes **Settle**, a working watchOS meditation experience w
 
 ### [Glassoft Agent Runtime](https://github.com/Charles-drZ/glassoft-agent-runtime-showcase) · AI engineering / agent runtime
 
-`Go` `Linux` `OpenCode` `OpenShell` `GitHub` `Agent Orchestration`
+`Go` `Linux` `NVIDIA` `Nemotron` `OpenCode` `OpenShell` `Agent Orchestration`
 
-GAR is a developer-facing runtime for bounded, reviewable AI-assisted software engineering.
+GAR is a developer-facing runtime for bounded, reviewable AI-assisted software engineering. Its current inference lane uses **NVIDIA hosted inference with the Nemotron model family**, while GAR itself remains provider- and model-neutral by design.
 
 The system compiles GitHub Issue contracts into deterministic execution context, runs managed agent jobs on a dedicated Linux worker, preserves durable lifecycle state, keeps backend/provider/model/runtime identities separate, and exposes execution through a GAR-owned CLI rather than treating an agent terminal as lifecycle authority.
 
@@ -128,7 +129,7 @@ Production infrastructure behind private Glassoft products: deliberately small p
 ## Currently building
 
 > **GlassBox / Settle** — iPhone release hardening and a physically validated standalone watchOS meditation experience  
-> **Glassoft Agent Runtime** — developer-facing AI engineering runtime, bounded execution, durable jobs, and richer execution feedback  
+> **Glassoft Agent Runtime** — NVIDIA/Nemotron-backed AI engineering runtime, bounded execution, durable jobs, and richer execution feedback  
 > **AI-assisted Swift learning platform** — tutor vertical slice, retrieval/evaluation system, and production deployment foundation  
 > **NodeMedic** — reliability and diagnostics tooling  
 > **GlassPort** — native macOS developer workspace
@@ -153,7 +154,7 @@ Next.js · React · TypeScript · Node.js · PostgreSQL · Drizzle · REST/OpenA
 Go · Linux · Docker · SQLite · systemd · Caddy · TLS · Tailscale · Raspberry Pi · Home Assistant · networking · HTTP APIs · service lifecycle · backup/restore · rollback · runtime diagnostics
 
 **Automation & agent infrastructure**  
-Git · GitHub · GitHub Actions · n8n · Python · Bash · YAML · JSON · OpenCode · OpenShell · agent orchestration · deterministic evidence pipelines · review-gated automation · execution contracts
+Git · GitHub · GitHub Actions · n8n · Python · Bash · YAML · JSON · NVIDIA hosted inference · Nemotron · OpenCode · OpenShell · agent orchestration · deterministic evidence pipelines · review-gated automation · execution contracts
 
 ## How I engineer
 
