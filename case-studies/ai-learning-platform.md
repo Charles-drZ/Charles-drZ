@@ -24,27 +24,32 @@ The goal is to help learners understand, review, and debug Swift/iOS code — in
 
 ## Current engineering scope
 
-The system now spans both product logic and deployable application infrastructure.
+The system now spans product UX, bounded interactive learning, assessment logic, AI/retrieval architecture, and deployable application infrastructure.
 
-### Application
+### Application and learning UX
 
 - Next.js / React application architecture;
 - TypeScript and Node.js server runtime;
 - PostgreSQL-backed product state;
 - Drizzle-based data access and reviewed migrations;
 - REST/OpenAPI boundaries for externally useful operations;
-- structured tutor/provider abstraction;
-- OpenAI Responses provider integration;
-- learner evidence and mastery contracts.
+- an editable, Xcode-inspired Swift exercise surface with syntax highlighting and line numbers;
+- step-based **edit → predict → feedback** beginner interaction;
+- deterministic bounded code checking instead of arbitrary Swift execution;
+- explicit positive/needs-work/prediction feedback states;
+- staged challenge design that can require use of the learner's existing variable rather than accepting a hard-coded final result.
 
 ### Learning and AI
 
 - a defined first sellable curriculum;
 - structured evidence taxonomy and mastery states;
+- deterministic assessment for the currently bounded coding exercises;
 - tutor decision contracts;
 - evaluation/golden-suite work;
 - source-grounded retrieval rather than unsupported model recall;
-- provider abstraction so tutor behavior is not coupled to one model vendor.
+- structured tutor/provider abstraction;
+- OpenAI Responses provider integration;
+- provider independence so product learning contracts are not coupled to one model vendor.
 
 ### Swift/iOS knowledge system
 
@@ -56,7 +61,7 @@ The intent is to keep technical truth grounded in source evidence while authorin
 
 ### Deployment and operations
 
-The current deployment foundation includes:
+The current delivery foundation is exercised through immutable staging release candidates and includes:
 
 - isolated staging and production Compose environments;
 - PostgreSQL role and migration boundaries;
@@ -65,6 +70,8 @@ The current deployment foundation includes:
 - Caddy ingress;
 - explicit secret transport;
 - database-backed readiness;
+- release-lock metadata and immutable GHCR image candidates;
+- explicit staging promotion and browser product review;
 - manual production promotion;
 - previous-release rollback;
 - encrypted off-host backup;
@@ -78,7 +85,7 @@ Infrastructure behavior is treated as part of product reliability rather than an
 
 **Provider independence.** Product and learning contracts sit above individual LLM providers.
 
-**Small sellable loop first.** The first goal is a usable learning loop, not a giant content library.
+**Small sellable loop first.** The first goal is a usable learning loop that teaches through doing, not a giant content library.
 
 **Immutable deployment evidence.** Releases, corpus versions, and retrieval artifacts are pinned and validated rather than inferred from mutable state.
 
@@ -120,3 +127,14 @@ This case study intentionally omits:
 - reusable operational access details.
 
 Public material focuses on architecture, verified capability, engineering decisions, and current product scope.
+
+
+## Current October 2026 product slice
+
+The current learner-facing slice is intentionally small but real.
+
+A beginner receives a short Swift program, edits code in an accessible browser-native editor, predicts the output, and receives deterministic feedback. Recent product work moved the exercise away from instructions that reveal the answer and toward small programming tasks such as updating an existing score with bonus points.
+
+The checker accepts only reviewed bounded forms and can reject a hard-coded final value even when it produces the same number, because the learning objective is the operation and mental model rather than accidental output equivalence.
+
+This is still not presented as arbitrary Swift execution, complete mastery scoring, or a fully qualified AI tutor loop. Those boundaries remain explicit while the smallest useful learning experience is being hardened in staging.
