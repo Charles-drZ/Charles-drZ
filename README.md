@@ -48,9 +48,9 @@ GlassBox now also includes **Settle**, a working watchOS meditation experience w
 
 GAR is a developer-facing runtime for bounded, reviewable AI-assisted software engineering. Its current inference lane uses **NVIDIA hosted inference with the Nemotron model family**, while GAR itself remains provider- and model-neutral by design.
 
-The system compiles GitHub Issue contracts into deterministic execution context, runs managed agent jobs on a dedicated Linux worker, preserves durable lifecycle state, keeps backend/provider/model/runtime identities separate, and exposes execution through a GAR-owned CLI rather than treating an agent terminal as lifecycle authority.
+The system now goes well beyond agent launch: it owns durable interactive sessions, explicit read-only/write authority, managed OpenShell runtime cleanup, bounded reviewer subagents, independent review/correction state, NVIDIA runtime-intelligence provenance, and a promotion path that is being qualified from accepted managed workspace through Git commit, push, draft PR, CI observation, and canonical evidence finalization.
 
-Current work includes runtime qualification, explicit authority boundaries, durable execution state, worker/backend orchestration, execution feedback, evidence capture, and fail-closed handling when required guarantees are unavailable.
+**What it shows:** AI engineering as a systems problem — orchestration, security boundaries, durable lifecycle ownership, agent/reviewer separation, runtime intelligence, evidence, correction loops, and human gates rather than unconstrained code generation.
 
 **What it shows:** AI engineering as a systems problem — orchestration, security boundaries, lifecycle ownership, capability contracts, evidence, failure handling, and human gates rather than unconstrained code generation.
 
@@ -64,11 +64,11 @@ Current work includes runtime qualification, explicit authority boundaries, dura
 
 A private product in active development for teaching Swift, SwiftUI, and iOS through an evidence-based learning loop rather than passive content consumption.
 
-The current system spans curriculum and mastery contracts, a source-grounded Swift/iOS retrieval corpus, tutor-provider abstraction, structured learner evidence, PostgreSQL-backed application infrastructure, staging/production deployment boundaries, immutable releases, rollback, backup, and restore drills.
+The product now has a real browser learning experience: an editable Xcode-inspired Swift exercise surface, syntax highlighting, step-based **edit → predict → feedback** interaction, deterministic bounded code checking, beginner-oriented challenge design, and immutable staging release candidates. Underneath that UI sit the curriculum/mastery contracts, source-grounded Swift/iOS retrieval corpus, tutor-provider abstraction, PostgreSQL-backed application infrastructure, and staging/production deployment/recovery system.
 
 The public product name is intentionally withheld while naming work remains open.
 
-**What it shows:** end-to-end full-stack product engineering combined with AI tutor architecture, retrieval/evaluation thinking, production deployment, and operational recovery.
+**What it shows:** full-stack product engineering from learning UX and deterministic assessment through AI/retrieval architecture, relational data, immutable deployment, rollback, backup, and recovery.
 
 [Explore the case study →](case-studies/ai-learning-platform.md)
 
@@ -80,9 +80,9 @@ The public product name is intentionally withheld while naming work remains open
 
 A local-first diagnostics and reliability toolkit that turns host, container, network, and resource observations into deterministic findings with evidence, confidence, and a useful next step.
 
-The working system includes terminal and JSON reports, sanitized support bundles, SQLite-backed history, a local API and embedded dashboard, scheduled health checks, health-transition tracking, rootless Linux service operation, and deterministic multi-platform release packaging.
+Beyond the local Doctor, the product now includes a privacy-bounded Pi Browser remote surface, authenticated Agent enrollment/reconnect, autonomous outbound heartbeat and diagnostic-state synchronization, remote Doctor detail, and physically accepted production flows — while keeping local diagnosis independent of Cloud availability.
 
-**What it shows:** product architecture, systems programming, persistence, security boundaries, service lifecycle, and release engineering in one system.
+**What it shows:** Go product engineering across deterministic diagnostics, local persistence, authenticated Agent/Cloud boundaries, browser UX, service lifecycle, privacy-safe synchronization, and real production validation.
 
 [Explore NodeMedic →](https://github.com/Charles-drZ/nodemedic-showcase)
 
@@ -128,11 +128,10 @@ Production infrastructure behind private Glassoft products: deliberately small p
 
 ## Currently building
 
-> **GlassBox / Settle** — iPhone release hardening and a physically validated standalone watchOS meditation experience  
-> **Glassoft Agent Runtime** — NVIDIA/Nemotron-backed AI engineering runtime, bounded execution, durable jobs, and richer execution feedback  
-> **AI-assisted Swift learning platform** — tutor vertical slice, retrieval/evaluation system, and production deployment foundation  
-> **NodeMedic** — reliability and diagnostics tooling  
-> **GlassPort** — native macOS developer workspace
+> **GlassBox / Settle** — iPhone wellbeing intelligence plus a physically validated standalone watchOS meditation product  
+> **Glassoft Agent Runtime** — NVIDIA/Nemotron AI engineering runtime with durable interactive execution, reviewer agents, runtime intelligence, correction loops, and PR/evidence promotion  
+> **AI-assisted Swift learning platform** — interactive Swift learning UX, deterministic code assessment, tutor/retrieval architecture, and immutable staging delivery  
+> **GlasSoft Web** — bilingual studio portfolio, project storytelling, accessibility, responsive interaction, and self-hosted CI
 
 ## Engineering systems
 
