@@ -37,7 +37,10 @@ The system now spans product UX, bounded interactive learning, assessment logic,
 - step-based **edit → predict → feedback** beginner interaction;
 - deterministic bounded code checking instead of arbitrary Swift execution;
 - explicit positive/needs-work/prediction feedback states;
-- staged challenge design that can require use of the learner's existing variable rather than accepting a hard-coded final result.
+- staged challenge design that can require use of the learner's existing variable rather than accepting a hard-coded final result;
+- a guarded own-words **EXPLAIN** answer form for a versioned Objective 1.1 question;
+- honest saved/pending status rather than presenting submission as approval;
+- account-scoped, private per-attempt status retrieval with manual refresh and no polling.
 
 ### Learning and AI
 
@@ -45,6 +48,10 @@ The system now spans product UX, bounded interactive learning, assessment logic,
 - structured evidence taxonomy and mastery states;
 - deterministic assessment for the currently bounded coding exercises;
 - tutor decision contracts;
+- a default-disabled one-shot mock evaluation coordinator;
+- distinct **PRIMARY** and independent **JUDGE** model roles with separate provider instances and cost/token bounds;
+- a disposable-PostgreSQL integration proof of the complete PRIMARY → JUDGE → reconciliation-proposal path;
+- explicit separation between a proposal and a final TutorReview/mastery decision;
 - evaluation/golden-suite work;
 - source-grounded retrieval rather than unsupported model recall;
 - structured tutor/provider abstraction;
@@ -71,6 +78,7 @@ The current delivery foundation is exercised through immutable staging release c
 - explicit secret transport;
 - database-backed readiness;
 - release-lock metadata and immutable GHCR image candidates;
+- rootless self-hosted Linux runner publication for main-branch release images;
 - explicit staging promotion and browser product review;
 - manual production promotion;
 - previous-release rollback;
@@ -131,10 +139,26 @@ Public material focuses on architecture, verified capability, engineering decisi
 
 ## Current October 2026 product slice
 
-The current learner-facing slice is intentionally small but real.
+The learner-facing slice is intentionally small but real.
 
-A beginner receives a short Swift program, edits code in an accessible browser-native editor, predicts the output, and receives deterministic feedback. Recent product work moved the exercise away from instructions that reveal the answer and toward small programming tasks such as updating an existing score with bonus points.
+A beginner receives a short Swift program, edits code in an accessible browser-native editor, predicts the output, and receives deterministic feedback. The exercise can reject a hard-coded final result when the learning objective is the operation and mental model rather than accidental output equivalence.
 
-The checker accepts only reviewed bounded forms and can reject a hard-coded final value even when it produces the same number, because the learning objective is the operation and mental model rather than accidental output equivalence.
+A second, merge-accepted slice now asks the learner to explain a Swift concept in their own words. The answer can be saved through the guarded EXPLAIN Attempt API and later queried through a private, account-scoped status endpoint. The UI remains explicit that **saved / evaluating / proposed** is not the same as approved.
 
-This is still not presented as arbitrary Swift execution, complete mastery scoring, or a fully qualified AI tutor loop. Those boundaries remain explicit while the smallest useful learning experience is being hardened in staging.
+Behind that surface, a default-off mock tutor path has been exercised end-to-end against disposable PostgreSQL using two distinct roles: PRIMARY and an independent JUDGE. The successful integration records model invocations, usage/cost evidence and an append-only reconciliation proposal while producing **zero TutorReview, zero mastery update and zero fake learner grade**. A deliberately wrong/source-inconsistent fixture fails closed before independent judgment.
+
+### Current qualification frontier
+
+A newer Module 1 learning stack is still in draft qualification rather than accepted product state. It includes:
+
+- local `@State` practice;
+- Binding trace/repair work;
+- ungraded transfer practice;
+- a reducer-owned guided flow that prevents advancing on wrong/missing answers and invalidates stale approval when an earlier answer changes;
+- rendered lesson/navigation safety contracts;
+- CI-green transition and production-build checks;
+- an operator-run Xcode 27 source/typecheck verifier reporting **8/8 expected outcomes**, including one deliberate compile-failure lesson.
+
+Those draft slices are not presented as deployed learner behavior until browser, accessibility and human pedagogical acceptance are complete.
+
+The product is still **not** presented as arbitrary Swift execution, a complete mastery system, or a fully qualified live AI tutor. Those boundaries remain explicit while the smallest useful proof-of-understanding loop is hardened.

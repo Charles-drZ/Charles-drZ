@@ -4,7 +4,7 @@
 
 ### Software Engineer · AI Engineering · iOS Development
 
-I build Apple-platform products, AI engineering runtimes, full-stack web systems, developer tooling, and production-minded infrastructure.
+I build Apple-platform products, AI engineering runtimes, full-stack learning systems, native developer tooling, and production-minded infrastructure.
 
 <br>
 
@@ -20,7 +20,7 @@ I build Apple-platform products, AI engineering runtimes, full-stack web systems
 
 ---
 
-I work across product engineering, AI engineering, Apple platforms, full-stack systems, and reliability.
+I work across product engineering, AI engineering, Apple platforms, full-stack systems, native developer tooling, and reliability.
 
 The common thread is explicit engineering boundaries: product behavior, persistence, execution authority, security, deployment, recovery, and runtime evidence should be inspectable rather than hidden behind framework defaults or model output.
 
@@ -30,7 +30,7 @@ The common thread is explicit engineering boundaries: product behavior, persiste
 
 `Swift` `SwiftUI` `SwiftData` `CloudKit` `StoreKit 2` `HealthKit` `watchOS`
 
-A long-running self-care and productivity product spanning iPhone and Apple Watch. Current work includes truthful 7/30-day wellbeing history, source-aware HealthKit reconciliation, Meditation ↔ Mood evidence, release hardening, and **Settle** — a physically validated standalone watchOS meditation experience.
+A long-running self-care and productivity product spanning iPhone and Apple Watch. Current accepted work includes truthful 7/30-day wellbeing history, source-aware HealthKit reconciliation, Meditation ↔ Mood evidence, release hardening, and **Settle** — a physically validated standalone watchOS meditation experience.
 
 **Shows:** end-to-end Apple-platform product ownership, persistence, HealthKit, physical-device validation, and release engineering.
 
@@ -42,11 +42,11 @@ A long-running self-care and productivity product spanning iPhone and Apple Watc
 
 `Go` `Linux` `NVIDIA` `Nemotron` `OpenCode` `OpenShell` `Agent Orchestration`
 
-GAR is a developer-facing runtime for bounded, reviewable AI-assisted software engineering. Its current inference lane uses **NVIDIA hosted inference with the Nemotron model family**.
+GAR is a developer-facing runtime for bounded, reviewable AI-assisted software engineering. Its current inference lane uses **NVIDIA hosted inference with the Nemotron model family** while the runtime keeps provider, model, backend and authority separate.
 
-The system owns durable interactive execution, explicit read-only/write authority, managed runtime cleanup, reviewer agents, independent review/correction state, runtime-intelligence provenance, and an actively qualified path from accepted workspace through Git commit, draft PR, CI observation, and canonical evidence.
+The accepted baseline owns durable jobs, managed OpenCode execution, a qualified OpenShell security boundary, operator status/watch surfaces and persisted evidence. The current stacked qualification line extends that model through interactive authority, reviewer/correction contracts, accepted-workspace promotion and verified final-response delivery/recovery — with fail-closed reconciliation when a remote outcome cannot be proven.
 
-**Shows:** AI engineering as a systems problem — orchestration, trust boundaries, lifecycle ownership, reviewer separation, failure handling, and evidence rather than unconstrained code generation.
+**Shows:** AI engineering as a systems problem — orchestration, trust boundaries, lifecycle ownership, failure recovery, reviewer separation, and evidence rather than unconstrained code generation.
 
 [Explore GAR →](https://github.com/Charles-drZ/glassoft-agent-runtime-showcase)
 
@@ -56,13 +56,27 @@ The system owns durable interactive execution, explicit read-only/write authorit
 
 `Next.js` `React` `TypeScript` `Node.js` `PostgreSQL` `Drizzle` `LLM` `Docker`
 
-A private Hungarian Swift/iOS learning product with a real staging learner experience: editable Xcode-inspired Swift exercises, syntax highlighting, **edit → predict → feedback** interaction, deterministic bounded code checking, and immutable release candidates.
+A private Hungarian Swift/iOS learning product with a real staging learner experience: editable Xcode-inspired Swift exercises, **edit → predict → feedback**, deterministic bounded checking, and a guarded own-words **EXPLAIN** flow.
 
-Behind the UI sit curriculum/mastery contracts, a source-grounded Swift/iOS corpus, tutor-provider abstraction, PostgreSQL infrastructure, staging/production boundaries, rollback, backup, and restore drills.
+The backend now also has a default-off, evidence-oriented tutor pipeline with immutable Attempts, account-scoped status retrieval and a PostgreSQL-backed mock **PRIMARY → independent JUDGE → reconciliation proposal** cycle. It deliberately does not turn that proposal into mastery or a grade without the remaining qualification gates.
 
-**Shows:** full-stack product work from learning UX and assessment through AI/retrieval architecture and production operations.
+**Shows:** full-stack product work from learning UX and assessment through AI evaluation contracts, retrieval/source provenance, relational data, rootless CI image publishing and production operations.
 
 [Explore the case study →](case-studies/ai-learning-platform.md)
+
+---
+
+### [GlassPort](https://github.com/Charles-drZ/glassport-showcase) · Native macOS developer tooling
+
+`Swift` `AppKit` `SwiftTerm` `PTY` `OpenSSH` `XCTest` `Xcode`
+
+A native macOS workspace for local and remote development environments, built around Workspaces, Ports and live terminal Sessions rather than disconnected terminal windows.
+
+The accepted product now includes real local/SSH terminals, native tabs, a focused right-side companion split, per-session local working directories, durable tab/layout restoration, system OpenSSH integration and a restrained truecolor terminal profile — all validated through native Mac builds and physical product smoke.
+
+**Shows:** developer-tool product design, AppKit, terminal/process lifecycle, trusted system-tool integration, durable-vs-ephemeral state modeling, and physical macOS validation.
+
+[Explore GlassPort →](https://github.com/Charles-drZ/glassport-showcase)
 
 ---
 
@@ -72,27 +86,15 @@ Behind the UI sit curriculum/mastery contracts, a source-grounded Swift/iOS corp
 
 A local-first diagnostics product that turns host, Docker, network, and resource observations into deterministic findings with evidence and explicit uncertainty.
 
-The product now also includes a privacy-bounded Pi Browser remote surface, Agent enrollment/reconnect, autonomous outbound heartbeat/state synchronization, remote Doctor detail, and physically accepted production flows — while keeping local diagnosis independent of Cloud availability.
+The product also includes a privacy-bounded Pi Browser remote surface, Agent enrollment/reconnect, autonomous outbound heartbeat/state synchronization, remote Doctor detail, and physically accepted production flows — while keeping local diagnosis independent of Cloud availability.
 
 **Shows:** systems programming, local persistence, authenticated Agent/Cloud boundaries, browser product UX, service lifecycle, and production validation.
 
 [Explore NodeMedic →](https://github.com/Charles-drZ/nodemedic-showcase)
 
----
-
-### [GlasSoft Web](case-studies/glassoft-web.md) · Frontend / full-stack product engineering
-
-`Next.js 16` `React 19` `TypeScript` `Vitest` `Vercel` `Accessibility`
-
-The studio portfolio is treated as a real product rather than a static brochure: Figma-authored visual fidelity, bilingual HU/EN surfaces, public-safe content projection, responsive editorial layouts, accessibility/SEO constraints, deterministic CI, and staged preview/release boundaries.
-
-**Shows:** frontend architecture, design implementation, localization, content safety, accessibility, testing, and deployment discipline.
-
-[Explore the case study →](case-studies/glassoft-web.md)
-
 ## Additional work
 
-**[GlassPort](https://github.com/Charles-drZ/glassport-showcase)** — native macOS developer tooling with AppKit, SwiftTerm, PTY lifecycle, system OpenSSH, durable workspace persistence, and physical product validation.
+**[GlasSoft Web](case-studies/glassoft-web.md)** — Next.js 16 / React 19 studio portfolio with Figma-authored visual fidelity, HU/EN localization, publication-safe content projection, accessibility, deterministic CI and an expanding browser/release QA matrix.
 
 **[Raspberry Home](https://github.com/Charles-drZ/raspberry-home-showcase)** — Raspberry Pi / Home Assistant platform with responsive UI, controlled updates, rollback, recovery, CI, and real-runtime validation.
 
@@ -102,11 +104,11 @@ The studio portfolio is treated as a real product rather than a static brochure:
 
 ## Technical range
 
-**Apple platforms**  
-Swift · SwiftUI · AppKit · SwiftData · CloudKit · StoreKit 2 · HealthKit · watchOS · WatchKit · SwiftTerm · XCTest · Xcode · TestFlight
+**Apple platforms & native tools**  
+Swift · SwiftUI · AppKit · SwiftData · CloudKit · StoreKit 2 · HealthKit · watchOS · WatchKit · SwiftTerm · PTY · OpenSSH · XCTest · Xcode · TestFlight
 
 **AI & full-stack**  
-Next.js · React · TypeScript · Node.js · PostgreSQL · Drizzle · REST/OpenAPI · retrieval systems · structured evaluation · OpenAI Responses · Docker Compose
+Next.js · React · TypeScript · Node.js · PostgreSQL · Drizzle · REST/OpenAPI · retrieval systems · tutor/evaluation contracts · OpenAI Responses · Docker Compose
 
 **Systems & reliability**  
 Go · Linux · Docker · SQLite · systemd · Caddy · TLS · Tailscale · networking · HTTP APIs · service lifecycle · backup/restore · rollback · runtime diagnostics

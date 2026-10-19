@@ -51,7 +51,7 @@ Implemented work includes:
 
 Localization is treated as a product and accessibility concern, not string replacement.
 
-The work deliberately does **not** claim complete sitewide language parity while detail pages, document-language behavior or release QA remain incomplete.
+The active vNext line has since expanded beyond listing pages: paired HU/EN detail routing now covers public project details and GAR Engineering presentation, with tests that fail closed when an approved Hungarian claim is missing. The work still does **not** claim complete production language parity until the full release/QA gates are accepted.
 
 ## Publication-safe content architecture
 
@@ -85,6 +85,8 @@ Current work includes:
 
 The target QA matrix includes Safari, Chrome, Firefox, mobile layouts, zoom/reflow and assistive-technology review.
 
+The current draft line also has browser-level accessibility automation using Playwright + axe, explicit keyboard navigation checks, forced-colors/reduced-motion coverage and route-specific diagnostic evidence. A Firefox run has exercised nine WCAG-tagged scenarios with zero detected automatic violations while preserving unresolved/inconclusive contrast findings for manual review rather than converting them into false passes.
+
 ## Testing and CI
 
 The project uses deterministic CI to prevent visual/product evolution from bypassing engineering constraints.
@@ -102,6 +104,16 @@ Checks include combinations of:
 - secret hygiene.
 
 A self-hosted Linux GitHub Actions runner handles repository CI.
+
+The browser/release QA system now also covers:
+
+- responsive capture matrices at 320 / 390 / 768 / 1440 CSS px;
+- touch, mouse and keyboard activation of portfolio cards;
+- Chromium and Firefox browser suites;
+- route/reflow/text-spacing coverage across HU and EN;
+- Lighthouse tooling;
+- RSC/navigation-timing diagnostics that separate destination, origin and alternate-locale resources;
+- manual-only macOS/WebKit lanes where hosted/runtime cost or platform requirements matter.
 
 Successful CI is not treated as visual acceptance. Browser/device review remains a separate gate for user-facing design changes.
 
@@ -129,6 +141,9 @@ The active vNext line includes:
 - stronger project presentation and media use;
 - safer contact behavior with copy-email fallback;
 - localization/SEO/accessibility cleanup;
+- paired HU/EN project and GAR detail experiences;
+- broader responsive and accessibility regression automation;
+- navigation/resource diagnostics for the observed Safari-specific latency investigation;
 - continued Product review before production release.
 
 The branch remains a work-in-progress release line; this case study does not claim that all vNext work is currently live in Production.
