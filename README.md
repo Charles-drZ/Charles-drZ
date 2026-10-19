@@ -92,6 +92,16 @@ The product also includes a privacy-bounded Pi Browser remote surface, Agent enr
 
 [Explore NodeMedic →](https://github.com/Charles-drZ/nodemedic-showcase)
 
+## Engineering notes
+
+Short write-ups on the engineering decisions behind the projects:
+
+- **[Durable intent is not runtime state](engineering-notes/glassport-durable-intent-vs-runtime-state.md)** — native macOS terminal state, PTYs, OpenSSH and safe relaunch reconstruction.
+- **[Unknown is a valid engineering state](engineering-notes/gar-unknown-outcomes-and-reconciliation.md)** — agent-runtime cancellation, remote uncertainty, reconciliation and no-replay recovery.
+- **[A tutor proposal is not mastery](engineering-notes/ai-learning-evidence-before-mastery.md)** — AI evaluation evidence, independent judging and learner-state authority.
+
+[Browse all engineering notes →](engineering-notes/README.md)
+
 ## Additional work
 
 **[GlasSoft Web](case-studies/glassoft-web.md)** — Next.js 16 / React 19 studio portfolio with Figma-authored visual fidelity, HU/EN localization, publication-safe content projection, accessibility, deterministic CI and an expanding browser/release QA matrix.
@@ -123,6 +133,8 @@ My professional background is in broadband critical communications: provisioning
 ## Public portfolio boundary
 
 Core product and operations source remains private where publishing it would expose proprietary logic or operational controls. Public repositories focus on architecture, verified behavior, visuals, engineering decisions, and current limitations.
+
+If this kind of engineering is useful to you, follow the profile — accepted milestones, public case studies and engineering notes are published here as the projects evolve.
 
 <div align="center">
 
