@@ -2,139 +2,126 @@
 
 # Károly Henrik Darázsi
 
-### Software Engineer · AI Engineering · iOS Development
+### Apple Platform Developer · Swift / SwiftUI · iOS, watchOS & macOS
 
-I build Apple-platform products, AI engineering runtimes, full-stack learning systems, native developer tooling, and production-minded infrastructure.
+I build native Apple-platform products — and an evidence-driven development workflow around them.
 
 <br>
 
 <img src="https://img.shields.io/badge/Swift-111111?style=flat-square&logo=swift&logoColor=white" alt="Swift">
-<img src="https://img.shields.io/badge/TypeScript-111111?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
-<img src="https://img.shields.io/badge/Go-111111?style=flat-square&logo=go&logoColor=white" alt="Go">
-<img src="https://img.shields.io/badge/PostgreSQL-111111?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
-<img src="https://img.shields.io/badge/Docker-111111?style=flat-square&logo=docker&logoColor=white" alt="Docker">
-<img src="https://img.shields.io/badge/Linux-111111?style=flat-square&logo=linux&logoColor=white" alt="Linux">
-<img src="https://img.shields.io/badge/NVIDIA-111111?style=flat-square&logo=nvidia&logoColor=white" alt="NVIDIA">
+<img src="https://img.shields.io/badge/SwiftUI-111111?style=flat-square&logo=apple&logoColor=white" alt="SwiftUI">
+<img src="https://img.shields.io/badge/iOS-111111?style=flat-square&logo=apple&logoColor=white" alt="iOS">
+<img src="https://img.shields.io/badge/watchOS-111111?style=flat-square&logo=apple&logoColor=white" alt="watchOS">
+<img src="https://img.shields.io/badge/macOS-111111?style=flat-square&logo=apple&logoColor=white" alt="macOS">
+<img src="https://img.shields.io/badge/Xcode-111111?style=flat-square&logo=xcode&logoColor=white" alt="Xcode">
 
 </div>
 
 ---
 
-I work across product engineering, AI engineering, Apple platforms, full-stack systems, native developer tooling, and reliability.
+I'm a software engineer focusing my independent product work on **Apple's ecosystem**: native iPhone and Apple Watch experiences, macOS developer tools, platform frameworks, persistence, lifecycle and real-device validation.
 
-The common thread is explicit engineering boundaries: product behavior, persistence, execution authority, security, deployment, recovery, and runtime evidence should be inspectable rather than hidden behind framework defaults or model output.
+I use AI coding agents and task-specific Codex skills to support the work — not as a substitute for understanding Swift, testing with Xcode or making engineering decisions.
 
-## Featured work
+## Apple-platform work
 
-### [GlassBox](https://github.com/Charles-drZ/glassbox-showcase) · iOS / watchOS product engineering
+### [GlassBox](https://github.com/Charles-drZ/glassbox-showcase) · iOS & watchOS
 
-`Swift` `SwiftUI` `SwiftData` `CloudKit` `StoreKit 2` `HealthKit` `watchOS`
+`Swift` `SwiftUI` `SwiftData` `CloudKit` `HealthKit` `StoreKit 2` `watchOS`
 
-A long-running self-care and productivity product spanning iPhone and Apple Watch. Current accepted work includes truthful 7/30-day wellbeing history, source-aware HealthKit reconciliation, Meditation ↔ Mood evidence, release hardening, and **Settle** — a physically validated standalone watchOS meditation experience.
+My long-running iPhone wellbeing/productivity product, built around habits, tasks, mood, journaling and gentle progression. Its **Settle** companion is a native, standalone Apple Watch meditation experience with physically exercised session continuity, Digital Crown interaction and HealthKit integration.
 
-**Shows:** end-to-end Apple-platform product ownership, persistence, HealthKit, physical-device validation, and release engineering.
+Current iPhone engineering includes source-aware wellbeing history and careful Habit scheduling/persistence. Recent merged work adds a seven-day Habits overview and read-first Habit Detail while preserving honest pending/unknown states. The app remains in **TestFlight and product hardening**, not an App Store-shipped claim.
+
+**What this demonstrates:** native Apple product ownership, SwiftUI state and interaction design, persistence/recovery, Apple frameworks, device-specific behavior and disciplined validation.
 
 [Explore GlassBox →](https://github.com/Charles-drZ/glassbox-showcase)
 
 ---
 
-### [Glassoft Agent Runtime](https://github.com/Charles-drZ/glassoft-agent-runtime-showcase) · AI engineering / agent runtime
-
-`Go` `Linux` `NVIDIA` `Nemotron` `OpenCode` `OpenShell` `Agent Orchestration`
-
-GAR is a developer-facing runtime for bounded, reviewable AI-assisted software engineering. Its current inference lane uses **NVIDIA hosted inference with the Nemotron model family** while the runtime keeps provider, model, backend and authority separate.
-
-The accepted baseline owns durable jobs, managed OpenCode execution, a qualified OpenShell security boundary, operator status/watch surfaces and persisted evidence. The current stacked qualification line extends that model through interactive authority, reviewer/correction contracts, accepted-workspace promotion and verified final-response delivery/recovery — with fail-closed reconciliation when a remote outcome cannot be proven.
-
-**Shows:** AI engineering as a systems problem — orchestration, trust boundaries, lifecycle ownership, failure recovery, reviewer separation, and evidence rather than unconstrained code generation.
-
-[Explore GAR →](https://github.com/Charles-drZ/glassoft-agent-runtime-showcase)
-
----
-
-### [AI-assisted Swift learning platform](case-studies/ai-learning-platform.md) · Full-stack & AI product engineering
-
-`Next.js` `React` `TypeScript` `Node.js` `PostgreSQL` `Drizzle` `LLM` `Docker`
-
-A private Hungarian Swift/iOS learning product with a real staging learner experience: editable Xcode-inspired Swift exercises, **edit → predict → feedback**, deterministic bounded checking, and a guarded own-words **EXPLAIN** flow.
-
-The backend now also has a default-off, evidence-oriented tutor pipeline with immutable Attempts, account-scoped status retrieval and a PostgreSQL-backed mock **PRIMARY → independent JUDGE → reconciliation proposal** cycle. It deliberately does not turn that proposal into mastery or a grade without the remaining qualification gates.
-
-**Shows:** full-stack product work from learning UX and assessment through AI evaluation contracts, retrieval/source provenance, relational data, rootless CI image publishing and production operations.
-
-[Explore the case study →](case-studies/ai-learning-platform.md)
-
----
-
 ### [GlassPort](https://github.com/Charles-drZ/glassport-showcase) · Native macOS developer tooling
 
-`Swift` `AppKit` `SwiftTerm` `PTY` `OpenSSH` `XCTest` `Xcode`
+`Swift` `AppKit` `SwiftTerm` `PTY` `OpenSSH` `XCTest`
 
-A native macOS workspace for local and remote development environments, built around Workspaces, Ports and live terminal Sessions rather than disconnected terminal windows.
+A native macOS workspace for local shells and SSH-based development, built around durable Workspaces, Ports, terminal tabs and independently live Sessions.
 
-The accepted product now includes real local/SSH terminals, native tabs, a focused right-side companion split, per-session local working directories, durable tab/layout restoration, system OpenSSH integration and a restrained truecolor terminal profile — all validated through native Mac builds and physical product smoke.
+Its accepted foundation includes system OpenSSH, a focused companion terminal pane, per-session local launch directories and restoration of workspace/tab/layout intent across relaunch — without claiming that dead PTYs or SSH processes survive. Newer command, theme and SSH tooling remains under qualification.
 
-**Shows:** developer-tool product design, AppKit, terminal/process lifecycle, trusted system-tool integration, durable-vs-ephemeral state modeling, and physical macOS validation.
+**What this demonstrates:** AppKit engineering, macOS UX, native process lifecycle, security boundaries and persistent-vs-ephemeral state modeling.
 
 [Explore GlassPort →](https://github.com/Charles-drZ/glassport-showcase)
 
 ---
 
-### [NodeMedic](https://github.com/Charles-drZ/nodemedic-showcase) · Go reliability product
+### [Skill-guided Apple development workflow](https://github.com/Charles-drZ/glassbox-development-workflow) · Codex, SwiftUI & Xcode
 
-`Go` `SQLite` `HTTP API` `systemd` `Linux` `Agent / Cloud`
+`Codex` `Build iOS Apps` `SwiftUI Expert` `Xcode` `XCTest` `AGENTS.md`
 
-A local-first diagnostics product that turns host, Docker, network, and resource observations into deterministic findings with evidence and explicit uncertainty.
+The workflow behind GlassBox now routes Codex to **relevant specialist skills**: the official Build iOS Apps plugin, a pinned SwiftUI Expert reference, and custom native Xcode-diagnosis and test-evidence skills.
 
-The product also includes a privacy-bounded Pi Browser remote surface, Agent enrollment/reconnect, autonomous outbound heartbeat/state synchronization, remote Doctor detail, and physically accepted production flows — while keeping local diagnosis independent of Cloud availability.
+The project records a successful bounded, read-only skill/subagent pilot. Skills do not grant build, device, protected-data, merge or release authority. Xcode output, physical-device observations and human Product acceptance remain separate evidence classes.
 
-**Shows:** systems programming, local persistence, authenticated Agent/Cloud boundaries, browser product UX, service lifecycle, and production validation.
+**What this demonstrates:** practical use of coding agents in an actual Apple project, specialized tool routing, careful source validation and explicit engineering boundaries — rather than a claim that AI automatically writes verified apps.
 
-[Explore NodeMedic →](https://github.com/Charles-drZ/nodemedic-showcase)
+[Read the Apple skill-routing case study →](https://github.com/Charles-drZ/glassbox-development-workflow/blob/main/docs/skill-guided-apple-development.md)
 
-## Engineering notes
+## Swift education & learning tooling
 
-Short write-ups on the engineering decisions behind the projects:
+### [AI-assisted Swift learning platform](case-studies/ai-learning-platform.md)
 
-- **[Durable intent is not runtime state](engineering-notes/glassport-durable-intent-vs-runtime-state.md)** — native macOS terminal state, PTYs, OpenSSH and safe relaunch reconstruction.
-- **[Unknown is a valid engineering state](engineering-notes/gar-unknown-outcomes-and-reconciliation.md)** — agent-runtime cancellation, remote uncertainty, reconciliation and no-replay recovery.
-- **[A tutor proposal is not mastery](engineering-notes/ai-learning-evidence-before-mastery.md)** — AI evaluation evidence, independent judging and learner-state authority.
+A private, Hungarian-language **web learning product for Swift and iOS development**. It uses an editable Swift exercise, an `edit → predict → feedback` loop, guarded own-words explanations and source-grounded assessment contracts. A default-off mock PRIMARY/JUDGE evaluation path has PostgreSQL integration evidence, but it is not presented as a qualified live tutor or automatic mastery system.
 
-[Browse all engineering notes →](engineering-notes/README.md)
+This is a *Swift education project built with web technologies*, not a native iOS app.
 
-## Additional work
+[Read the case study →](case-studies/ai-learning-platform.md)
 
-**[GlasSoft Web](case-studies/glassoft-web.md)** — Next.js 16 / React 19 studio portfolio with Figma-authored visual fidelity, HU/EN localization, publication-safe content projection, accessibility, deterministic CI and an expanding browser/release QA matrix.
+## How I work
 
-**[Raspberry Home](https://github.com/Charles-drZ/raspberry-home-showcase)** — Raspberry Pi / Home Assistant platform with responsive UI, controlled updates, rollback, recovery, CI, and real-runtime validation.
+- **Native-first:** Swift, SwiftUI and AppKit where they fit; Xcode and Apple platform behavior are the reference points.
+- **Skills for the task:** focused Codex/SwiftUI/Xcode guidance instead of blindly loading every installed skill.
+- **Evidence over output:** source review, builds, XCTest, runtime checks and physical-device acceptance answer different questions.
+- **Safe persistence:** pay attention to restoration, lifecycle, data authority and failure states — especially in CloudKit, HealthKit and app-owned state.
+- **Human ownership:** agents assist implementation and investigation; product scope, risky operations and release acceptance remain explicit.
 
-**[Glassoft Infrastructure](case-studies/glassoft-infrastructure.md)** — production infrastructure, trust boundaries, deployment, backup/restore, observability, and private administration.
+## Engineering writing
 
-**[Development workflow](https://github.com/Charles-drZ/glassbox-development-workflow)** and **[automation workflow](https://github.com/Charles-drZ/automation-workflow-showcase)** — scoped delivery, deterministic evidence, durable project memory, and review-gated automation.
+- **[Skill-guided Codex for Apple development](https://github.com/Charles-drZ/glassbox-development-workflow/blob/main/docs/skill-guided-apple-development.md)** — task-specific skills, a verified bounded pilot and native validation boundaries.
+- **[Durable intent is not runtime state](engineering-notes/glassport-durable-intent-vs-runtime-state.md)** — the macOS terminal state model behind GlassPort.
+- **[A tutor proposal is not mastery](engineering-notes/ai-learning-evidence-before-mastery.md)** — evidence boundaries in a Swift education product.
 
-## Technical range
+[All engineering notes →](engineering-notes/README.md)
 
-**Apple platforms & native tools**  
-Swift · SwiftUI · AppKit · SwiftData · CloudKit · StoreKit 2 · HealthKit · watchOS · WatchKit · SwiftTerm · PTY · OpenSSH · XCTest · Xcode · TestFlight
+## Other engineering work
 
-**AI & full-stack**  
-Next.js · React · TypeScript · Node.js · PostgreSQL · Drizzle · REST/OpenAPI · retrieval systems · tutor/evaluation contracts · OpenAI Responses · Docker Compose
+My earlier and parallel work also includes Go/Linux systems, full-stack development and AI-agent runtime experiments. They show technical breadth, but **Apple-platform development is my primary direction**.
 
-**Systems & reliability**  
-Go · Linux · Docker · SQLite · systemd · Caddy · TLS · Tailscale · networking · HTTP APIs · service lifecycle · backup/restore · rollback · runtime diagnostics
+- **[Glassoft Agent Runtime](https://github.com/Charles-drZ/glassoft-agent-runtime-showcase)** — experimental Go agent execution, lifecycle and failure/reconciliation engineering; not my current portfolio focus.
+- **[NodeMedic](https://github.com/Charles-drZ/nodemedic-showcase)** — local-first Go/Linux diagnostics and a privacy-bounded remote monitoring product.
+- **[GlasSoft Web](case-studies/glassoft-web.md)** — bilingual Next.js/React portfolio product, accessibility and browser QA.
+- **[Raspberry Home](https://github.com/Charles-drZ/raspberry-home-showcase)** — Raspberry Pi / Home Assistant operation and recovery.
+- **[Glassoft Infrastructure](case-studies/glassoft-infrastructure.md)** and **[Automation workflow](https://github.com/Charles-drZ/automation-workflow-showcase)** — supporting infrastructure and evidence workflows.
 
-**Agent & automation infrastructure**  
-NVIDIA hosted inference · Nemotron · OpenCode · OpenShell · GitHub Actions · n8n · Python · Bash · execution contracts · reviewer agents · deterministic evidence pipelines
+## Technical focus
+
+**Apple platforms**  
+Swift · SwiftUI · AppKit · iOS · watchOS · macOS · Xcode · XCTest · SwiftData · CloudKit · HealthKit · StoreKit 2 · Sign in with Apple · TestFlight
+
+**Apple developer tooling**  
+SwiftTerm · PTY/process lifecycle · system OpenSSH · native macOS interaction · persistence/relaunch
+
+**Development workflow**  
+Codex · task-specific agent skills · AGENTS.md · native Xcode validation · GitHub PR review · evidence-based acceptance
+
+**Supporting experience**  
+TypeScript · React · Next.js · PostgreSQL · Go · Linux · Docker · GitHub Actions · system integration
 
 ## Background
 
-My professional background is in broadband critical communications: provisioning, device management, system integration, Linux troubleshooting, technical documentation, and automation. That environment reinforced the same habits I apply to software products: evidence, recovery, repeatability, and explicit operational boundaries.
+My professional background is in critical communications, provisioning, device management, Linux troubleshooting and system integration. That work reinforced the engineering habits I bring to Apple products: traceability, repeatability, data safety and recovery.
 
-## Public portfolio boundary
+## Public source boundary
 
-Core product and operations source remains private where publishing it would expose proprietary logic or operational controls. Public repositories focus on architecture, verified behavior, visuals, engineering decisions, and current limitations.
-
-If this kind of engineering is useful to you, follow the profile — accepted milestones, public case studies and engineering notes are published here as the projects evolve.
+GlassBox, GlassPort and the Swift learning platform have private implementation repositories. Public case studies describe verified behavior, engineering choices and limitations without exposing proprietary code, private configurations or user data.
 
 <div align="center">
 
@@ -142,6 +129,6 @@ If this kind of engineering is useful to you, follow the profile — accepted mi
 
 [LinkedIn](https://linkedin.com/in/charles-drzs) · [GitHub](https://github.com/Charles-drZ)
 
-<sub>Technical profile last reviewed: October 2026.</sub>
+<sub>Portfolio focus reviewed: November 2026.</sub>
 
 </div>
